@@ -1,0 +1,35 @@
+﻿<Window x:Class="NorthwindApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NorthwindApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="LoadDataBtn" Content="Load Customers" Margin="0,10,10.333,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" Click="LoadCustomersBtn_Click" IsEnabled="False"/>
+        <TextBox x:Name="NumberOfCustomersTbx" Height="23" Margin="0,36,10.333,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="LightGray" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Number of Customers:" Margin="528,36,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="28"/>
+        <Label Content="Customer Names:" HorizontalAlignment="Left" Margin="554,64,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="CustomerNamesLbx" HorizontalAlignment="Right" Margin="0,64,10.333,0" Width="120" Background="LightGray" Height="58" VerticalAlignment="Top"/>
+        <Label Content="User Name:" Margin="10,18,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" RenderTransformOrigin="-0.521,1.087" d:LayoutOverrides="HorizontalAlignment"/>
+        <Label Content="Password:" Margin="10,47,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" RenderTransformOrigin="-0.521,1.087" d:LayoutOverrides="HorizontalAlignment"/>
+        <Label Content="Server:" Margin="10,75,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" RenderTransformOrigin="-0.521,1.087" d:LayoutOverrides="HorizontalAlignment"/>
+        <Label Content="Database:" Margin="10,104,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="24" RenderTransformOrigin="-0.521,1.087" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBox x:Name="UserNameTbx" Height="23" Margin="86,21,0,0" TextWrapping="Wrap" Text="User_CEO" VerticalAlignment="Top" Background="LightGray" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="PasswordTbx" Height="23" Margin="86,49,0,0" TextWrapping="Wrap" Text="CEOPass" VerticalAlignment="Top" Background="LightGray" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="ServerTbx" Height="23" Margin="86,78,0,0" TextWrapping="Wrap" Text="IT350_2301C" VerticalAlignment="Top" Background="LightGray" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="DatabaseTbx" Height="23" Margin="86,106,0,0" TextWrapping="Wrap" Text="Northwind" VerticalAlignment="Top" Background="LightGray" HorizontalAlignment="Left" Width="120"/>
+        <Button x:Name="LoadEmployeesBtn" Content="Load Employees" Margin="0,133,10.333,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120" Click="LoadEmployeesBtn_Click" IsEnabled="False"/>
+        <TextBox x:Name="NumberOfEmployeesTbx" Height="23" Margin="0,159,9.333,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="LightGray" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Number of Employees:" Margin="528,159,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="28"/>
+        <Label Content="Employee Names:" HorizontalAlignment="Left" Margin="549,192,0,193.667"/>
+        <ListBox x:Name="EmployeeNamesLbx" HorizontalAlignment="Right" Margin="0,187,10.333,175.667" Width="120" Background="LightGray"/>
+        <Button x:Name="LoadOrdersBtn" Content="Load Orders" Margin="0,0,9.333,143.667" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120" Click="LoadOrdersBtn_Click" IsEnabled="False"/>
+        <TextBox x:Name="NumberOfOrdersTbx" Height="23" Margin="0,0,9.333,115.667" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Background="LightGray" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Number of Orders:" Margin="549,0,0,115.667" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="28"/>
+        <Label Content="Orders:" HorizontalAlignment="Left" Margin="609,0,0,84.667" VerticalAlignment="Bottom"/>
+        <ListBox x:Name="OrderNamesLbx" HorizontalAlignment="Right" Margin="0,0,9.333,52.667" Width="120" Background="LightGray" Height="58" VerticalAlignment="Bottom"/>
+        <Button x:Name="LoginBtn" Content="Login" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="75" Click="LoginBtn_Click"/>
+    </Grid>
+</Window>
